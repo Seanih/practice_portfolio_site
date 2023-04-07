@@ -10,6 +10,9 @@ import {
 } from 'react-icons/ai';
 import Image from 'next/image';
 import TempPic from '../public/dev-ed-wave.png';
+import Design from '../public/design.png';
+import Consulting from '../public/consulting.png';
+import Code from '../public/code.png';
 
 const Home: NextPage = () => {
 	return (
@@ -57,7 +60,7 @@ const Home: NextPage = () => {
 							<AiFillLinkedin />
 							<AiFillYoutube />
 						</div>
-						<div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden flex flex-col justify-center'>
+						<div className='mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden flex flex-col justify-center'>
 							<Image src={TempPic} alt='profile pic' />
 						</div>
 					</section>
@@ -65,9 +68,80 @@ const Home: NextPage = () => {
 					<section>
 						<div>
 							<h3 className='text-3xl py-1'>Services I offer</h3>
-							<p></p>
+							<p className='text-md py-2 leading-8 text-gray-800'>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Tempora, pariatur!{' '}
+								<span className='text-teal-500'>Important words</span> lorem
+								ipsum dolor sit amet consectetur adipisicing elit. Iste
+								similique possimus hic eligendi iure qui.
+							</p>
+							<p className='text-md py-2 leading-8 text-gray-800'>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+								natus reiciendis dolorum deleniti possimus laudantium molestias
+								fuga doloribus incidunt minima?
+							</p>
 						</div>
+						<>
+							{/* Card */}
+							<div className='text-center border shadow-lg p-10 rounded-xl my-10'>
+								<Image
+									className='mx-auto'
+									src={Design}
+									width={100}
+									alt='design'
+								/>
+								<h3 className='text-lg font-medium pt-8 pb-2'>
+									Beautiful Designs
+								</h3>
+								<p className='py-2'>
+									Creating elegant designs suited for your design theory
+								</p>
+								<h4 className='py-4 text-teal-600'>Design Tools I Use</h4>
+								<p className='text-gray-800 py-1'>Photoshop</p>
+								<p className='text-gray-800 py-1'>Illustrator</p>
+								<p className='text-gray-800 py-1'>Figma</p>
+							</div>
+							{/* Card */}
+							<div className='text-center border shadow-lg p-10 rounded-xl my-10'>
+								<Image
+									className='mx-auto'
+									src={Consulting}
+									width={100}
+									alt='design'
+								/>
+								<h3 className='text-lg font-medium pt-8 pb-2'>
+									Beautiful Designs
+								</h3>
+								<p className='py-2'>
+									Creating elegant designs suited for your design theory
+								</p>
+								<h4 className='py-4 text-teal-600'>Design Tools I Use</h4>
+								<p className='text-gray-800 py-1'>Photoshop</p>
+								<p className='text-gray-800 py-1'>Illustrator</p>
+								<p className='text-gray-800 py-1'>Figma</p>
+							</div>
+							{/* Card */}
+							<div className='text-center border shadow-lg p-10 rounded-xl my-10'>
+								<Image
+									className='mx-auto'
+									src={Code}
+									width={100}
+									alt='design'
+								/>
+								<h3 className='text-lg font-medium pt-8 pb-2'>
+									Beautiful Designs
+								</h3>
+								<p className='py-2'>
+									Creating elegant designs suited for your design theory
+								</p>
+								<h4 className='py-4 text-teal-600'>Design Tools I Use</h4>
+								<p className='text-gray-800 py-1'>Photoshop</p>
+								<p className='text-gray-800 py-1'>Illustrator</p>
+								<p className='text-gray-800 py-1'>Figma</p>
+							</div>
+						</>
 					</section>
+					<section></section>
 				</main>
 			</div>
 		</>
