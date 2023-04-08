@@ -78,19 +78,15 @@ const Home = () => {
 						</div>
 						{/* parallax images */}
 						<Tilt
-							className='parallax-effect-img mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden flex flex-col justify-center md:h-96 md:w-96'
-							tiltMaxAngleX={40}
-							tiltMaxAngleY={40}
-							perspective={800}
-							transitionSpeed={1500}
-							scale={1.1}
-							gyroscope={true}
+							className='parallax-effect mx-auto'
+							perspective={500}
 						>
 							<Image
 								className='inner-element'
 								src={TempPic}
 								alt='profile pic'
 							/>
+							{/* <p className='text-white inner-element'>Test It Out</p> */}
 						</Tilt>
 					</section>
 
